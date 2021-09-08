@@ -1,4 +1,4 @@
-[![Logo](utils/DFKI_Logo_smallest.jpg)](https://www.dfki.de/web/)
+[![Logo](Documentation/DFKI_Logo_smallest.jpg)](https://www.dfki.de/web/)
 
 # mEx - Medical Information Extraction:
 
@@ -22,10 +22,26 @@ workbench is made publicly available, so it can be used out of the box,
 as a benchmark or transferred to related problems.
 
 ---
+
 ## Notice:
 This repository is only a docker deployment for the mEx models to facilitate the usage and testing, The [Originial-Repo](https://github.com/DFKI-NLP/mEx_medical_information_extraction)
 is still under development and will be ready soon.
+
 ---
+
+## Requirements:
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker-Compose](https://docs.docker.com/compose/install/)
+
+---
+
+## Tutorials:
+* [Tutorial 1: Usage](Documentation/Usage.md)
+* [Tutorial 2: IO-Format/Example](Documentation/Example.md)
+
+
+---
+
 ## mEx Models Overview:
 
 | Task | Language | Dataset | Score | Download Model|
@@ -33,85 +49,7 @@ is still under development and will be ready soon.
 | Named Entity Recognition |German | German Nephrology Corpus (Charite)   |  **83.25** (F1)  | [*named_entity_recognition_mex_model(custom_flair_embeddings).pt*](https://cloud.dfki.de/owncloud/index.php/s/WWbnqJ6N8gQQWMD/download)|
 | Relation Extraction |German | German Nephrology Corpus (Charite)   |  **84.0** (F1)  | [*relation_extraction_mex_model(Custom_Word_Concept_Relative_Embeddings).pt*](https://cloud.dfki.de/owncloud/index.php/s/cDHpdckyPx72gdY/download)|
 | Part-of-Speech Tagging |German| German Nephrology Corpus (Charite)  | **98.57** (Acc.) | [*part_of_speech_tagger_mex_model(default_word_flair_embeddings).pt*](https://cloud.dfki.de/owncloud/index.php/s/e7G9deea7eRksCY/download)|
----
-## Requirements:
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker-Compose](https://docs.docker.com/compose/install/)
----
 
-## Usage:
-```commandline
-git clone 
-docker-compose up -d
-```
-
-
----
-```json
-{
-    "list":[
-        [
-            "Seit",
-            "2",
-            "Wochen",
-            "depressive",
-            "Symptomatik",
-            "."
-        ],
-        [
-            "Hat",
-            "Schmerzen",
-            "und",
-            "Engegefühl",
-            "im",
-            "Brust",
-            "ohne",
-            "Dyspnoe",
-            "bei",
-            "unauffälligem",
-            "EKG-Befund",
-            "und",
-            "normaler",
-            "Labor",
-            "."
-        ],
-        [
-            "Vorstellung",
-            "bei",
-            "Psychosomatik",
-            "nächste",
-            "Woche",
-            "am",
-            "12.12.2012",
-            "."
-        ],
-        [
-            "Kreatinin",
-            "auf",
-            "1,0",
-            "abgefallen",
-            "."
-        ],
-        [
-            "Prograf",
-            "planmäßig",
-            "reduziert",
-            ",",
-            "Urbason",
-            "reduziert",
-            "."
-        ],
-        [
-            "Sono-Tx",
-            ":"
-        ],
-        [
-            "iO",
-            "."
-        ]
-    ]
-}
-```
 ---
 
 ## Reference:
