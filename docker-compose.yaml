@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mex1:
+    build: SequenceTagger
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mex2
+
+  mex2:
+    build: RelationExtraction
+    ports:
+      - '5005:5000'
+
