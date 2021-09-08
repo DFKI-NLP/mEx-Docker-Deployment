@@ -43,14 +43,14 @@ The models need to be placed in the correct directories:
 Following lines should be changed:
 
 * [Dockerfile 1](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/main/RelationExtraction/Dockerfile)
-  - uncomment [line 10](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/RelationExtraction/Dockerfile#L10)
-  - comment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/RelationExtraction/Dockerfile#L11)
+  - uncomment [line 10](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/RelationExtraction/Dockerfile#L10)
+  - comment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/RelationExtraction/Dockerfile#L11)
 
 * [Dockerfile 2](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile)
-  - uncomment [line 8](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile#L8)
-  - uncomment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile#L11)
-  - comment [line 9](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile#L9)
-  - comment [line 12](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile#L12)
+  - uncomment [line 8](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L8)
+  - uncomment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L11)
+  - comment [line 9](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L9)
+  - comment [line 12](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L12)
   
 
 ---
