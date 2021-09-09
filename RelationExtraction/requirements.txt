@@ -1,0 +1,3 @@
+Flask==2.0.1
+flask-restplus==0.13.0
+flair @ git+git://github.com/amrayach/flair.git@e4822a391b934c50fbfc7bc4802f28743501c2a1
