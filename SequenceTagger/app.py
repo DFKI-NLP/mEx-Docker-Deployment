@@ -90,7 +90,6 @@ def merge_ner_tags(id, in_res, res):
             org_k = k
 
 
-
 @ner_space.route("/")
 class NER(Resource):
     @app.doc(responses={200: 'OK', 400: 'Invalid Argument'})
@@ -145,6 +144,7 @@ class RelEx(Resource):
 
             sent_start_index = sent_start_index[:-1][1:]
             r = requests.post("http://mex2:5005/relexx/", json={"tokens": all_sents, "tags": all_tags, "sent_start_index": sent_start_index})
+            #r = requests.post("http://localhost:5005/relexx/", json={"tokens": all_sents, "tags": all_tags, "sent_start_index": sent_start_index})
             rel_res = r.json()
 
             return {
@@ -154,7 +154,6 @@ class RelEx(Resource):
 
         except Exception as e:
             relex_space.abort(400, e.__doc__, status="Could not perform prediction", statusCode="400")
-
 
 
 if __name__ == '__main__':

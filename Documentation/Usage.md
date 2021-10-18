@@ -27,6 +27,15 @@ http://localhost:5000/
 
 ```
 
+---
+
+After making sure that all the docker services and API-endpoints are up and running, you could use the [**example.py**]() script to send and receive requests / responses.
+
+The example script doesn't need any external libraries and could be used via python3
+
+```shell
+python example.py
+```
 
 ---
 
