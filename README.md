@@ -3,6 +3,14 @@
 # mEx - Medical Information Extraction:
 
 ---
+
+***The usage of our models is free and can be used for scientific purposes (see our license). 
+However, to use the models you need to comply with our data use agreement.***
+
+***(contact: [roland.roller@dfki.de](mailto:roland.roller@dfki.de?subject=[mEx]%20Usage%20of%20mEx%20models), subject: "Usage of mEx models")***
+
+
+---
 ## Introduction:
 **I**n the information extraction and natural language processing domain,
 accessible datasets are crucial to reproduce and compare results.
@@ -23,11 +31,10 @@ as a benchmark or transferred to related problems.
 
 ---
 
-## Notice:
+<!--## Notice:
 This repository is only a docker deployment for the mEx models to facilitate the usage and testing, The [Originial-Repo](https://github.com/DFKI-NLP/mEx_medical_information_extraction)
-is still under development and will be ready soon.
+is still under development and will be ready soon.-->
 
----
 
 ## Requirements:
 - [Docker](https://docs.docker.com/get-docker/)
