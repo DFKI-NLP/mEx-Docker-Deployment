@@ -1,10 +1,14 @@
 # 1) Usage:
 
-## 1.Run:
+---
 
-The first time docker compose is used it will need roughly 20~30 minutes depending on the performance of the given device 
-and Network speed. The first run includes downloading the mEx models from the DFKI cloud and also installing the needed libraries
-which sums up to (7.5 GB) 
+## 1.Run:
+After downloading the mEx models, place them as following: 
+
+* _named_entity_recognition_mex_model.pt_ & _part_of_speech_tagger_mex_model.pt_ --> [SequenceTagger](https://github.com/DFKI-NLP/mEx-Docker-Deployment/tree/master/SequenceTagger)
+* _relation_extraction_mex_model.pt_ --> [RelationExtraction](https://github.com/DFKI-NLP/mEx-Docker-Deployment/tree/master/RelationExtraction)
+
+and proceed with the container deployment.
 
 ```shell
 
@@ -29,7 +33,7 @@ http://localhost:5000/
 
 ---
 
-After making sure that all the docker services and API-endpoints are up and running, you could use the [**example.py**]() script to send and receive requests / responses.
+After making sure that all the docker services and API-endpoints are up and running, you could use the [**example.py**](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/master/example.py) script to send and receive requests/responses.
 
 The example script doesn't need any external libraries and could be used via python3
 
@@ -39,30 +43,6 @@ python example.py
 
 ---
 
-
-## Faster 1.Run:
-
-There is also the possibility to download the models beforehand from the listed links in the mentioned [table](https://github.com/DFKI-NLP/mEx-Docker-Deployment#mex-models-overview).
-
-The models need to be placed in the correct directories:
-
-- [Part-of-Speech-Tagging](https://cloud.dfki.de/owncloud/index.php/s/e7G9deea7eRksCY/download) & [Named-Entity-Recognition](https://cloud.dfki.de/owncloud/index.php/s/WWbnqJ6N8gQQWMD/download) Models --> [SequenceTagger](https://github.com/DFKI-NLP/mEx-Docker-Deployment/tree/main/SequenceTagger)
-- [Relation-Extraction](https://cloud.dfki.de/owncloud/index.php/s/cDHpdckyPx72gdY/download) Model --> [RelationExtraction](https://github.com/DFKI-NLP/mEx-Docker-Deployment/tree/main/RelationExtraction)
-
-Following lines should be changed:
-
-* [Dockerfile 1](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/main/RelationExtraction/Dockerfile)
-  - uncomment [line 10](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/RelationExtraction/Dockerfile#L10)
-  - comment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/RelationExtraction/Dockerfile#L11)
-
-* [Dockerfile 2](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/1f31e3263c19a7485bbc28b17d0dccc06cedeec2/SequenceTagger/Dockerfile)
-  - uncomment [line 8](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L8)
-  - uncomment [line 11](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L11)
-  - comment [line 9](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L9)
-  - comment [line 12](https://github.com/DFKI-NLP/mEx-Docker-Deployment/blob/0ff83aca6b67e3cefc3c422d07e82666ee774189/SequenceTagger/Dockerfile#L12)
-  
-
----
 
 ## 2.Run in case of changes in the code
 
